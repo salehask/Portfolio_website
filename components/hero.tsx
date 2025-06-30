@@ -75,41 +75,7 @@ const Hero = () => {
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 1.5, duration: 0.8 }}
 >
-  <motion.div
-    className="flex gap-8 px-4"
-    animate={{ x: ["100%", "-100%"] }}
-    transition={{
-      duration: 40,
-      repeat: Infinity,
-      ease: "linear",
-    }}
-  >
-    {[...Array(2)].map((_, i) => (
-      <div key={i} className="flex gap-8">
-        {[
-          FaHtml5,
-          FaCss3Alt,
-          SiTailwindcss,
-          FaJava,
-          SiSpring,
-          SiSpringboot,
-          FaReact,
-          SiMysql,
-          FaJs,
-        ].map((Icon, index) => (
-          <motion.div
-            key={`${i}-${index}`}
-            className="w-24 h-24 bg-slate-900 rounded-xl flex items-center justify-center shadow-md border border-slate-700 hover:scale-105 transition-transform duration-300"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.6 + index * 0.05 }}
-          >
-            <Icon className="text-5xl text-emerald-300" />
-          </motion.div>
-        ))}
-      </div>
-    ))}
-  </motion.div>
+
 </motion.div>
 
 
