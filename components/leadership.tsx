@@ -23,12 +23,7 @@ const Leadership = () => {
       icon: Heart,
       highlight: "Community Service",
     },
-    {
-      title: "Environmental Initiative",
-      description: "Organized tree plantation drives and environmental awareness campaigns in rural communities.",
-      icon: TreePine,
-      highlight: "Environmental Impact",
-    },
+   
   ]
 
   return (
